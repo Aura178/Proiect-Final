@@ -1,0 +1,95 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  .container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  #background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+  }
+  
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    color: white;
+  }
+  
+  .logo-image {
+    width: 200px;
+    height: auto; 
+    filter: invert(100%);
+}
+  
+  .sub-text {
+    margin-top: 20px;
+    font-family: "Constantia";
+    font-size: 40px;
+  }
+
+  .sub-text p {
+    margin: 0; 
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    font-family: "Microsoft JhengHei Light";
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    margin-top: 40px;
+  }
+  
+  .button:hover {
+    background-color: darkgreen;
+  }
+  
+  .logo-image {
+    opacity: 0; 
+    transform: translateY(-50px);
+    animation: fadeInFromTop 2s ease forwards; 
+}
+
+.sub-text p {
+    opacity: 0; 
+    transform: translateY(-20px); 
+    animation: fadeInFromTop 1.5s ease forwards; 
+}
+
+@keyframes fadeInFromTop {
+    from {
+        opacity: 0; 
+        transform: translateY(-50px); 
+    }
+    to {
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+
+  
+  
+  
+  
